@@ -793,7 +793,10 @@ pre > * {
 	border-radius: 1.5rem;
 }
 .resume_cont_1_2 li{
-	padding: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
 	font-size: var(----fs_resume_cont1_dt);
 	color: var(--theme_orangeish);
 	text-shadow: 0 0 0.05rem var(--theme_yellow);
@@ -815,7 +818,10 @@ pre > * {
 	border-radius: 1.5rem;
 }
 .resume_cont_1_3 li{
-	padding: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
 	font-size: var(----fs_resume_cont1_dt);
 	color: var(--theme_orangeish);
 	text-shadow: 0 0 0.05rem var(--theme_yellow);
@@ -916,13 +922,22 @@ pre > * {
 
 .portfolio_part_main{
 	display: flex;
+	justify-content: space-around;
+	background-image: url(images/maybe_flip.jpg);
+	background-size: cover;
+	background-repeat: repeat;
+	align-items: center;
 	position: relative;
-	width: 100%;
-	justify-content: center;
+	max-width: 100%;
 	height: 100vh;
+	z-index: -100;
 
 }
 
 .portfolio_part_main a{
-	color: red;
+	color: var(--theme_white);
+	text-shadow: 0 0 0.5rem currentColor;
+	font-size: 50px;
+	font-family: 'Lora', serif;
+	font-weight: 400;
 }
