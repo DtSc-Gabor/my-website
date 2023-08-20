@@ -17,38 +17,57 @@
 	<!--icons-->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"><script src="https://kit.fontawesome.com/c80ea18c94.js"></script>
 
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
 
 </head>
 
 <body>
-<nav class = "navbar" id= "navbar">
-			
-			<div class = "logo"><a href="#home">
-				<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.Enthusiast</span> <span class="token punctuation">{</span>
-	<span class="token property">Autodidact</span><span class="token punctuation">:</span> Explorer<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre></a>
-			</div>
-			<ul class = "nav-list" id="NavigList">
-				<li class = "list-item">
-					<a href="#home" class="active">.Home</a>
-				</li>
-				<li class = "list-item">
-					<a href="#about">.About</a>
-				</li>
-				<li class = "list-item">
-					<a href="#resume">.Resume</a>
-				</li>
-				<li class = "list-item">
-					<a href="#portfolio">.Portfolio</a>
-				</li>
-			</ul>
-			<div class="menu" id="MenuButton">
-				<div class="menu-line"></div>
-				<div class="menu-line"></div>
-				<div class="menu-line"></div>
-			</div>
+	<nav class = "navbar" id= "navbar">
+				
+				<div class = "logo"><a href="#home">
+					<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.Enthusiast</span> <span class="token punctuation">{</span>
+		<span class="token property">Autodidact</span><span class="token punctuation">:</span> Explorer<span class="token punctuation">;</span>
+	<span class="token punctuation">  }</span></code></pre></a>
+				</div>
+				<ul class = "nav-list" id="NavigList">
+					<li class = "list-item">
+						<a href="#home" class="active">.Home</a>
+					</li>
+					<li class = "list-item">
+						<a href="#about">.About</a>
+					</li>
+					<li class = "list-item">
+						<a href="#resume">.Resume</a>
+					</li>
+					<li class = "list-item">
+						<a href="#portfolio">.Portfolio</a>
+					</li>
+				</ul>
+				<div class="menu" id="MenuButton">
+					<div class="menu-line"></div>
+					<div class="menu-line"></div>
+					<div class="menu-line"></div>
+				</div>
 
-</nav>
+	</nav>
+	<div class="bottom_contact">
+		<div class="cont_container">
+				<div class="phone">
+					<span class="fa fa-phone">			 </span>
+					<p> +3630 867 0262</p>
+				</div>
+				<div class="fa fa-linkedin-square linkedin-icon"  style="font-size:42px;color: var(--theme_blue)">				
+				</div>
+				<!--<div class="contact_on" style="color: white"> CONTACT </div>--><!--idea to hide all contacct on basic, than show on hover or click-->
+				<div class="fa fa-github-square github-icon" style="font-size:42px;color: var(--theme_blue)"></div>
+					<div class="email"> 
+						<span class="fa fa-envelope">			</span>
+						<p> csapkovits.gabor@gmail.com</p>
+					</div>
+		</div>
+	</div>
 	<section id="home">
 	<div class = "banner">
 		<div class = "app-text">
@@ -60,7 +79,7 @@
 					<div class ="btn-group">
 						<div class="play-btn">
 							<div class="play-btn-inner">
-								<a href="#resume"><i class="fa-solid fa-play fa-beat-fade"></i>
+								<a href="#resume"><i class="fa-solid fa-play"></i>
 								<span>Check out my CV here</span></a>
 							</div>
 						</div>
@@ -101,31 +120,20 @@
 								<dt>Udemy</dt>
 								<dd>The Data Science Course 2023:<br>
 								Complete Data Science Bootcamp<br>
-							  (2023)</dd>
-							  <br>
+							  	(2023)</dd>
+							  	<br>
+							  	<dt>Microsoft Learn</dt>
+								<dd>PL-300:
+								Microsoft Power BI Data Analyst<br>
+								(2023)<br></dd>
+								<br>
 								<dt>poltextLAB</dt>
 								<dd>Data Visualization in R<br>
 								(2022)<br></dd>
 							</dl>
 					</div>
-				<h2>Languages</h2>
+					<h2>Work Experiences</h2>
 					<div class="resume_cont_1_2">
-						<ul>
-							<li>Hungarian &ensp; <span>Native</span></li>
-							<li>English &ensp;&ensp;&ensp;&ensp; <span>B2</span></li>
-						</ul>
-				</div>
-				<h3>Contact</h3>
-					<div class="resume_cont_1_3">
-						<ul>
-							<li>email: &ensp;&ensp; <span>csapkovits.gabor@gmail.com</span></li>
-							<li>phone: &ensp;&ensp; <span>+3630-867-0262</span></li>
-						</ul>
-				</div>
-			</div>
-		<div class="resume_cont_2">
-				<h1>Work Experiences</h1>
-					<div class="resume_cont_2_1">
 						<ul>
 							<li>Key Experience:
 								<dl>
@@ -145,32 +153,51 @@
 							</li>
 							<li>Others
 							<dl>
-								<dt>Also, within the last 8 years, I've held these positions:</dt>
+								<dt>Also, within the last 8 years,<br> I've worked in these positions:</dt>
 								<dd>Betting Clerk at Horse Racing, Barist, Bartender</dd>
 							</dl>
 						</li>
 						</ul>
 					</div>
-					<h1>Programming Languages</h1>
+  		<!--<h3>Contact</h3>
+					<div class="resume_cont_1_3">
+						<ul>
+							<li>email: &ensp;&ensp; <span>csapkovits.gabor@gmail.com</span></li>
+							<li>phone: &ensp;&ensp; <span>+3630-867-0262</span></li>
+						</ul>
+				</div>-->
+			</div>
+		<div class="resume_cont_2">
+			<h1>Languages</h1>
+				<div class="resume_cont_2_1">
+					<ul>
+						<li>Hungarian &ensp; <span>Native</span></li>
+						<li>English &ensp;&ensp;&ensp;&ensp; <span>B2</span></li>
+					</ul>
+				</div>
+					<h2>Programming Languages</h2>
 					<div class="resume_cont_2_2">
 						<!--<div class="resume_cont_2_2_1">-->
 							<ul>
 								<li>ForDataScience
 									<dl>
-										<dt>Python</dt>
-										<dd>NumPy, Pandas, Statsmodels, Scikit-Learn, TensorFlow 2.0,<br> Matplotlib, Seaborn</dd>
-										<dt>R</dt>				
-										<dd>readr, dplyr, haven, ggplot2</dd>
-										<dt>SQL</dt>
-										<dd>MySQL</dd>
+										<dt>Python<p style="color: white">&nbsp;*</p></dt>
+										<dd>NumPy, Pandas, Statsmodels, Scikit-Learn, TensorFlow 2.0,<br> Matplotlib, Seaborn and more ...</dd>
+										<dt>R<p style="color: white">&nbsp; *</p></dt>				
+										<dd>readr, dplyr, haven, ggplot2 and more ...</dd>
+										<dt>SQL<p style="color: white">&nbsp; *</p></dt>
+										<dd>MySQL - SSMS</dd>
 									</dl>
 								</li>
 								<li>Others
 									<dl>
-										<dt>Html, CSS, JavaScript, Java</dt>
+										<dt>Html<p style="color: white">&nbsp; *</p>, CSS<p style="color: white">&nbsp; *</p>, JavaScript<p style="color: white">&nbsp; *</p>, <br>Java<p style="color: white">&nbsp;**</p>, C<p style="color: white">&nbsp; **</p></dt>
 									</dl>
 								</li>
 							</ul>
+						<br>
+						<div class="line"></div><br>
+						<p class= "disclaimer" style="color: wite">Knowledge acquired &nbsp; ** (during) &nbsp; / &nbsp; * (after) &nbsp; university studies</p>
 					</div>
 				<!--</div>-->
 			</div>
@@ -179,51 +206,379 @@
  </section>
 
 
-	<section id="portfolio">
-		<div class="portfolio_part_main">
-		<a>Under construction,
-		come back later!</a>
-	</div>
+<section id="portfolio">
+	<div class="portfolio_part_main">
+		<div class="title_banner"> 
+			<h3 style="text-wrap: balanced">**Mobile view of this section is under development**</h3> 
+		</div>
+		<div class="mobile_portfolio_disclaimer">
+			<a>Unfortunately<br> under construction,<br>come back later, until than check out in desktop view!</a>
+		</div>
+		<div class="slider_container">
+			<div class="slides">
+				<input type="radio" name="radio-btn" id="radio1">
+				<input type="radio" name="radio-btn" id="radio2">
+				<input type="radio" name="radio-btn" id="radio3">
+				<input type="radio" name="radio-btn" id="radio4">
+				<input type="radio" name="radio-btn" id="radio5">
+
+				<div class="slider_card_1">
+					<div class="slider_card_pic_1">
+						<img src="images/housing.jpg">
+					</div>
+					<div class="slider_card_desc_1">
+						<div class="card_wrapper">
+							<div class="content">
+							<b>House Price Prediction - Linear Regresssions</b>
+							</div>
+							<button class="check_it_btn1">
+								Check It Out
+							</button>
+						</div>
+
+					In this project, I'll use multiple linear regression methods, including Simple, Multiple, Ridge, Lasso, and ElasticNet, to predict house prices. By analyzing various factors, I aim to develop precise models that shed light on property valuation using diverse regression techniques.
+					</div>
+					<div class="slider_card_small_1"> 
+						<!--<div class="small_row_1_1"><i class="fab fa-python"></i></div>
+						<div class="small_row_1_2"><p>Short title1 </p></div>-->
+						<i class="fab fa-python python-icon"></i><br>
+						<p>Supervised Learning</p>
+					</div>
+				</div>
+				<div class="slider_card_2">
+					<div class="slider_card_pic_2">
+						<img src="images/mnist.jpg">
+					</div>
+					<div class="slider_card_desc_2">
+						<div class="card_wrapper">
+							<div class="content">
+							<b>Classifying on the MNIST dataset - CNN</b>
+							</div>
+							<button class="check_it_btn2">
+								Check It Out
+							</button>
+						</div>
+
+					The MNIST dataset consists of around 70,000 images of handwritten digits. The objective of this project is to build an algorithm that takes as input an image and then correctly determines which number is shown in that image.
+					</div>
+					<div class="slider_card_small_2"> 
+						<!--<div class="small_row_1_1"><i class="fab fa-python"></i></div>
+						<div class="small_row_1_2"><p>Short title1 </p></div>-->
+						<i class="fab fa-python"></i><br>
+						<p>Deep Learning</p>
+					</div>
+				</div>
+				<!--<div class="slider_card_3">
+					<div class="slider_card_pic_3">
+						<img src="images/cluster3.jpg">
+					</div>
+					<div class="slider_card_desc_3">Nullam sagittis non sapien eget fringilla.<br><br>
+
+					Phasellus interdum elit auctor, elementum quam ac, dapibus sapien. Nunc auctor neque eget faucibus euismod. Suspendisse laoreet justo sed nulla imperdiet, non scelerisque nulla sodales.
+					</div>
+					<div class="slider_card_small_3"> 
+						<div class="small_row_1_1"><i class="fab fa-python"></i></div>
+						<div class="small_row_1_2"><p>Short title1 </p></div>
+						<i class="fab fa-python"></i><br>
+						<p>Predict Absenteeism</p>
+					</div>
+				</div>-->
+				<div class="slider_card_3">
+					<div class="slider_card_pic_3">
+						<img src="images/cluster3.jpg">
+					</div>
+					<div class="slider_card_desc_3">
+						<div class="card_wrapper">
+							<div class="content">
+							<b>Cluster Analysis</b>
+							</div>
+							<button class="check_it_btn3">
+								Check It Out
+							</button>
+						</div>
+
+					In this project, I'll apply cluster analysis techniques to reveal hidden patterns in the dataset. Through methods like k-means or hierarchical clustering, I'll categorize similar data points, uncovering valuable insights into the underlying structure of the data.
+					</div>
+					<div class="slider_card_small_3"> 
+						<!--<div class="small_row_1_1"><i class="fab fa-python"></i></div>
+						<div class="small_row_1_2"><p>Short title1 </p></div>-->
+						<i class="fab fa-python"></i>
+						<p>Unsupervized Learning </p>				
+					</div>
+				</div>
+				<div class="slider_card_4">
+					<div class="slider_card_pic_4">
+						<img src="images/Rplot.png">
+					</div>
+					<div class="slider_card_desc_4">
+						<div class="card_wrapper">
+							<div class="content">
+							<b>Visualizations in R</b>
+							</div>
+							<button class="check_it_btn4">
+								Check It Out
+							</button>
+						</div>
+
+					This project serves as a demonstration of data exploration, illustrating the diverse capabilities of ggplot2 and its potential for revealing patterns, trends, and relationships within different datasets. 
+					</div>
+					<div class="slider_card_small_4"> 
+						<!--<div class="small_row_1_1"><i class="fab fa-python"></i></div>
+						<div class="small_row_1_2"><p>Short title1 </p></div>-->
+						<i class="fa-brands fa-r-project"></i><br>
+						<p>R Project </p>
+					</div>
+				</div>
+		 <div class="navigation-auto">
+		          <div class="auto-btn1"></div>
+		          <div class="auto-btn2"></div>
+		          <div class="auto-btn3"></div>
+		          <div class="auto-btn4"></div>
+		         <!-- <div class="auto-btn5"></div>-->
+		        </div><!---->
+		 <!----><div class="navigation-manual">
+			        <label for="radio1" class="manual-btn"></label>
+			        <label for="radio2" class="manual-btn"></label>
+			        <label for="radio3" class="manual-btn"></label>
+			        <label for="radio4" class="manual-btn"></label>
+			       <!--  <label for="radio5"class="manual-btn"></label>-->
+			     </div><!---->
+
+			</div><!--end of slides-->
+	
+		</div><!--end of slider_container-->
+		<dialog class="modal" id="modal1">
+			<div class="modal_choice">
+				<i class="fa-solid fa-download" data-folder="House_Price_LinRegs"></i>
+				<i class="fa-brands fa-github-square" id="github_1"></i>
+			</div>
+			<button class="close_modal"><b>Close</b></button>
+		</dialog>
+		<dialog class="modal" id="modal2">
+			<div class="modal_choice">
+				<i class="fa-solid fa-download " data-folder="Project_MNIST"></i>
+				<i class="fa-brands fa-github-square" id="github_2"></i>
+			</div>
+			<button class="close_modal"><b>Close</b></button>
+		</dialog>
+		<dialog class="modal" id="modal3">
+			<div class="modal_choice">
+				<i class="fa-solid fa-download" data-folder="Cluster_Analysis"></i>
+				<i class="fa-brands fa-github-square" id="github_3"></i>
+			</div>
+			<button class="close_modal"><b>Close</b></button>
+		</dialog>
+		<dialog class="modal" id="modal4">
+			<div class="modal_choice">
+				<i class="fa-solid fa-download" data-folder="R_Project"></i>
+				<i class="fa-brands fa-github-square" id="github_4"></i>
+			</div>
+			<button class="close_modal"><b>Close</b></button>
+		</dialog>
+	</div><!--end of portfolio_main-->
 </section>
 
 
 </body>
 <!--Mobile View Menu Click-->
-<script type="text/javascript">
-	const menuButton = document.getElementById('MenuButton');
-	const navList = document.getElementById('NavigList');
+	<script type="text/javascript">
+		const menuButton = document.getElementById('MenuButton');
+		const navList = document.getElementById('NavigList');
 
 
-	menuButton.addEventListener('click', () =>{
-		navList.classList.toggle('active');
-	});
-</script>
+		menuButton.addEventListener('click', () =>{
+			navList.classList.toggle('active');
+		});
+	</script>
 
-<!--Smooth Scrolling Anchored Site-->
-<script>
-	document.querySelectorAll('a[href^="#"').forEach(anchor => { 
-			anchor.addEventListener("click", function(e){
-				e.preventDefault(); //allows to be smooth,..nope it doesnt
-				document.querySelector(this.getAttribute("href")).scrollIntoView({
-					behavior: "smooth";
+	<!--Smooth Scrolling Anchored Site-->
+	<script>
+		document.querySelectorAll('a[href^="#"').forEach(anchor => { 
+				anchor.addEventListener("click", function(e){
+					e.preventDefault(); //allows to be smooth,..nope it doesnt
+					document.querySelector(this.getAttribute("href")).scrollIntoView({
+						behavior: "smooth";
+					});
 				});
-			});
-	});
-</script>
+		});
+	</script>
+	<!--linkedin and github click-->
+	<script>
+	        document.addEventListener('DOMContentLoaded', function() {
+	            
+	            var linkedinIcon = document.querySelector('.linkedin-icon');
+	            var githubIcon = document.querySelector('.github-icon');
+	            
+	           
+	            linkedinIcon.addEventListener('click', function() {
+	                
+	                var webpageLink = 'https://www.linkedin.com/in/g%C3%A1bor-csapkovits-ab6595284/';
+	                
+	                
+	                window.open(webpageLink, '_blank');
+	            });
+	            githubIcon.addEventListener('click', function() {
+	                
+	                var webpageLink = 'https://github.com/DtSc-Gabor/';
+	                
+	                
+	                window.open(webpageLink, '_blank');
+	            });
+	        });
+	</script>
 
-<!--sticky menu-->
-<script type="text/javascript">
-window.onscroll = function() {myFunction()};
+	<!--sticky menu-->
+	<script type="text/javascript">
+		window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+		var navbar = document.getElementById("navbar");
+		var sticky = navbar.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-};
-</script>
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+		    navbar.classList.add("sticky");
+		  } else {
+		    navbar.classList.remove("sticky");
+		  }
+		};
+	</script>
+	<!--slider-->
+	<!--<script type="text/javascript">
+			var counter=1;
+			setInterval(function(){
+				document.getElementById('radio'+counter).checked = true;
+				counter++;
+				if(counter>5){
+					counter=1;
+				}
+			}, 5000);
+	</script>-->
+	<script type="text/javascript">
+	  var counter = 1;
+	  var totalRadios = 4; // Total number of radio buttons
+	  var intervalId;
+
+	  // Function to update the radio button selection
+	  function updateRadio() {
+	    document.getElementById('radio' + counter).checked = true;
+	    counter++;
+	    if (counter > totalRadios) {
+	      counter = 1;
+	    }
+	  }
+
+	  function startAutoIncrement() {
+	    // Clear previous interval (if any)
+	    clearInterval(intervalId);
+	    intervalId = setInterval(updateRadio, 6500); // Call the updateRadio function every 5 seconds
+	  }
+
+	  function manualSelection() {
+	    // Get the selected radio button value
+	    var selectedRadio = document.querySelector('input[name="radio-btn"]:checked');
+
+	    if (selectedRadio) {
+	      // If a radio button is manually selected, update the counter accordingly
+	      counter = parseInt(selectedRadio.id.replace('radio', ''), 5);
+	    }
+
+	    startAutoIncrement();
+	    
+	    setTimeout(startAutoIncrement, 6500);
+	  }
+
+	  var radioButtons = document.querySelectorAll('input[name="radio-btn"]');
+	  radioButtons.forEach(function (radioButton) {
+	    radioButton.addEventListener('click', manualSelection);
+	  });
+
+	  
+	  startAutoIncrement();
+	</script>
+	<!--modal open n close, and maybe link from here-->
+	<script type="text/javascript">
+	  function setupModal(modalId, openBtnClass) {
+	    const modal = document.querySelector(modalId);
+	    const openModal = document.querySelector(openBtnClass);
+	    const closeModal = modal.querySelector('.close_modal');
+
+	    openModal.addEventListener('click', () => {
+	      modal.showModal();
+	    });
+
+	    closeModal.addEventListener('click', () => {
+	      modal.close();
+	    });
+	  }
+
+	  // Set up modal interactions
+	  setupModal('#modal1', '.check_it_btn1');
+	  setupModal('#modal2', '.check_it_btn2');
+	  setupModal('#modal3', '.check_it_btn3');
+	  setupModal('#modal4', '.check_it_btn4');
+	  // Add more setupModal calls for additional modals and buttons if needed
+	</script>
+	<script type="text/javascript">
+	  document.addEventListener("DOMContentLoaded", function() {
+	    const downloadIcons = document.querySelectorAll(".modal_choice .fa-download");
+
+	    downloadIcons.forEach(icon => {
+	      icon.addEventListener("click", function() {
+	        const folderName = this.getAttribute("data-folder");
+	        const downloadLink = document.createElement("a");
+
+	        downloadLink.href = `downloadable/${folderName}.zip`;
+	        downloadLink.download = `${folderName}.zip`;
+
+	        document.body.appendChild(downloadLink);
+	        downloadLink.click();
+	        document.body.removeChild(downloadLink);
+	      });
+	    });
+	  });
+	</script>
+
+	<!--linkedin and github click-->
+	<script>
+	        document.addEventListener('DOMContentLoaded', function() {
+	            
+	            var github_proj_link_1 = document.querySelector('#github_1');
+	            var github_proj_link_2 = document.querySelector('#github_2');
+	            var github_proj_link_3 = document.querySelector('#github_3');
+	            var github_proj_link_4 = document.querySelector('#github_4');
+	            
+	           
+	            github_proj_link_1.addEventListener('click', function() {
+	                
+	                var webpageLink = 'https://github.com/DtSc-Gabor/Supervised-Learning/tree/main';
+	                
+	                
+	                window.open(webpageLink, '_blank');
+	            });
+	            github_proj_link_2.addEventListener('click', function() {
+	                
+	                var webpageLink = 'https://github.com/DtSc-Gabor/DeepLearning';
+	                
+	                
+	                window.open(webpageLink, '_blank');
+	            });
+	            github_proj_link_3.addEventListener('click', function() {
+	                
+	                var webpageLink = 'https://github.com/DtSc-Gabor/UnSupervised-Learning';
+	                
+	                
+	                window.open(webpageLink, '_blank');
+	            });
+	            github_proj_link_4.addEventListener('click', function() {
+	                
+	                var webpageLink = 'https://github.com/DtSc-Gabor/R-Project';
+	                
+	                
+	                window.open(webpageLink, '_blank');
+	            });
+	        });
+	</script>
+
+
+
 </htmL>
