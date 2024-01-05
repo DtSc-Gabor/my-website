@@ -1,276 +1,840 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Enthusiast Autodidact Explorer</title>
+     <link rel="icon" type="image/x-icon" href="images/mylogo2.png">
+    <link rel="stylesheet" href="style.css">
 
-<htmL lang="en">
-
-<head>
-	<title>Csapkovits Gábor</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<!--fonts-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;600&display=swap" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"> 
-	
-	<!--icons-->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"><script src="https://kit.fontawesome.com/c80ea18c94.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"><script src="https://kit.fontawesome.com/c80ea18c94.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kanit:wght@300&display=swap" rel="stylesheet"> 
 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Silkscreen&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"><script src="https://kit.fontawesome.com/c80ea18c94.js"></script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  </head>
+  <body>
+  	<!--Page Loader--->
+  	<div id="loader-container">
+    <svg viewBox="0 0 100 100">
+        <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6">-->
+            <!-- left line -->
+            <path d="M 21 40 V 59">
+                <animateTransform
+                    attributeName="transform"
+                    attributeType="XML"
+                    type="rotate"
+                    values="0 21 59; 180 21 59"
+                    dur="2s"
+                    repeatCount="indefinite" />
+            </path>
+            <!-- right line -->
+            <path d="M 79 40 V 59">
+                <animateTransform
+                    attributeName="transform"
+                    attributeType="XML"
+                    type="rotate"
+                    values="0 79 59; -180 79 59"
+                    dur="2s"
+                    repeatCount="indefinite" />
+            </path>
+            <!-- top line -->
+            <path d="M 50 21 V 40">
+                <animate
+                    attributeName="d"
+                    values="M 50 21 V 40; M 50 59 V 40"
+                    dur="2s"
+                    repeatCount="indefinite" />
+            </path>
+            <!-- btm line -->
+            <path d="M 50 60 V 79">
+                <animate
+                    attributeName="d"
+                    values="M 50 60 V 79; M 50 98 V 79"
+                    dur="2s"
+                    repeatCount="indefinite" />
+            </path>
+            <!-- top box -->
+            <path d="M 50 21 L 79 40 L 50 60 L 21 40 Z">
+                <animate
+                    attributeName="stroke"
+                    values="rgba(255,255,255,1); rgba(100,100,100,0)"
+                    dur="2s"
+                    repeatCount="indefinite" />
+            </path>
+            <!-- mid box -->
+            <path d="M 50 40 L 79 59 L 50 79 L 21 59 Z"/>
+            <!-- btm box -->
+            <path d="M 50 59 L 79 78 L 50 98 L 21 78 Z">
+                <animate
+                    attributeName="stroke"
+                    values="rgba(100,100,100,0); rgba(255,255,255,1)"
+                    dur="2s"
+                    repeatCount="indefinite" />
+            </path>
+            <animateTransform
+                attributeName="transform"
+                attributeType="XML"
+                type="translate"
+                values="0 0; 0 -19"
+                dur="2s"
+                repeatCount="indefinite" />
+        </g>
+    </svg>
+
+    <div class="load_text">
+    	Loading page<span id="dot1">.</span><span id="dot2">.</span><span id="dot3">.</span>    	
+    </div>
+
+    
+</div>
 
 
 
-</head>
 
-<body>
-	<nav class = "navbar" id= "navbar">
-				
-				<div class = "logo"><a href="#home">
+
+  	  <header>
+	    <div class="logo"><a href="#home">
 					<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.Enthusiast</span> <span class="token punctuation">{</span>
 		<span class="token property">Autodidact</span><span class="token punctuation">:</span> Explorer<span class="token punctuation">;</span>
 	<span class="token punctuation">  }</span></code></pre></a>
-				</div>
-				<ul class = "nav-list" id="NavigList">
-					<li class = "list-item">
-						<a href="#home" class="active">.Home</a>
-					</li>
-					<li class = "list-item">
-						<a href="#about">.About</a>
-					</li>
-					<li class = "list-item">
-						<a href="#resume">.Resume</a>
-					</li>
-					<li class = "list-item">
-						<a href="#portfolio">.Portfolio</a>
-					</li>
-				</ul>
-				<div class="menu" id="MenuButton">
-					<div class="menu-line"></div>
-					<div class="menu-line"></div>
-					<div class="menu-line"></div>
-				</div>
-
-	</nav>
-	<div class="bottom_contact">
-		<div class="cont_container">
-				<div class="phone">
-					<span class="fa fa-phone">			 </span>
-					<p> +3630 867 0262</p>
-				</div>
-				<div class="fa fa-linkedin-square linkedin-icon"  style="font-size:42px;color: var(--theme_blue)">				
-				</div>
-				<!--<div class="contact_on" style="color: white"> CONTACT </div>--><!--idea to hide all contacct on basic, than show on hover or click-->
-				<div class="fa fa-github-square github-icon" style="font-size:42px;color: var(--theme_blue)"></div>
-					<div class="email"> 
-						<span class="fa fa-envelope">			</span>
-						<p> csapkovits.gabor@gmail.com</p>
-					</div>
-		</div>
-	</div>
-	<section id="home">
-	<div class = "banner">
-		<div class = "app-text">
+	    </div>
+		    <nav>
+    <ul>
+        <li class="nav-item active" data-link="home"><a href="#home" onclick="scrollToSection('#home');">.Home</a></li>
+        <li class="nav-item" data-link="about"><a href="#about" onclick="scrollToSection('#about');">.About</a></li>
+        <li class="nav-item" data-link="skills"><a href="#skills" onclick="scrollToSection('#skills');">.Skills</a></li>
+        <li class="nav-item" data-link="portfolio"><a href="#portfolio" onclick="scrollToSection('#portfolio');">.Portfolio</a></li>
+    </ul>
+</nav>
+	  </header>
+	  <!--maybe-
+	  <footer>
+	  	
+	  </footer>-->
+	  <div class="bottom_contact">
+	  	<div class="cont_container">
+	  		<div class="fa fa-linkedin-square linkedin-icon"  style="font-size:25px;color: var(--theme_blue)">				
+	  		</div>
+	  		<a href="#home"><div class="email"> 
+	  			<span class="fa fa-envelope">			</span>
+	  			<p> Contact Me! </p>
+	  		</div></a>
+	  		<div class="fa fa-github-square github-icon" style="font-size:25px;color: var(--theme_blue)"></div>
+	  	</div>
+	  </div>
+<!---Home SECTION--->
+<section id="home" class="section">
+	<div class ="Home_main">
+		
+		<div class = "home_cont1">
+			<h1 id="text1">
+				<a>Welcome Here</a>,
+			</h1>
+			<br>
 			<h1>
-			<span>Welcome Here,</span>
-				 I'm <br><a>Gábor!</a>
-				</h1>
-				<div class ="primary-btn">
-					<div class ="btn-group">
-						<div class="play-btn">
-							<div class="play-btn-inner">
-								<a href="#resume"><i class="fa-solid fa-play"></i>
-								<span>Check out my CV here</span></a>
-							</div>
+				&nbsp; &nbsp; &nbsp;<span>I'm</span> &nbsp;Gábor! 
+			</h1 id="text2">
+			<div class="divider"></div>
+			<h2>
+				Feel free to explore my website
+			</h2><br>
+			<i id="downarrow1" class="fa-solid fa-chevron-down"></i><br><br>
+			<i id="downarrow2" class="fa-solid fa-chevron-down"></i><br><br>
+			<i id="downarrow3" class="fa-solid fa-chevron-down"></i>
+
+
+
+		</div>
+		<div class = "home_cont2">
+			<h1><a>Or</a><br>
+				<span>contact me</span> right away:
+			</h1><br>
+			<form action="https://formsubmit.co/csapkovits.gabor@gmail.com" method="POST">
+				<input class="cont_me_mail" type="email" name="email" placeholder="Your Email Adress" required>
+				<br><input class="cont_me_subject" name="_subject" placeholder="Subject"><br>
+				<textarea class="cont_me_text"type="text" name="name" placeholder="Write your message here." required></textarea>
+				<br>
+				<div class="send_cont">
+					<button type="submit"><span class="fa fa-envelope"></button> 
+						<div class="send_hover_text">SEND EMAIL
 						</div>
 					</div>
-				</div>		
+				</form> 
 			</div>
-	</div>	
+		</div>
 	</section>
-	<section id="about">
-		<div class="about_part_main">
-			<div class="about_cont_1">
+
+	<!---About SECTION--->      
+	<section id="about" class="section">
+		<div class ="About_main">
+			<div class = "about_cont1">
+				<div class="photo_of_me">
+					<img src="images/myselfcutted.png">
+				</div>	      		
+			</div>
+			<div class = "about_cont2">
 				<h1>
 					<span>Hey,</span>
-				 <br><a>It's Me!</a>
+					<br><a>It's</a> Me!
 				</h1><br>
 				<div class ="about_cont_text_1">
-				<p id="first_part">
-				After finishing at university, as<span id="bionics"> a Molecular Bionics Engineer </span><a href="#resume" id="check">(check my resume)</a> with absolutorium, altough i felt engaged and confident to re-enter the world of full-time work, I noticed a shift in the world around me and felt the need to follow up on it.<br><br></p>
-				<p id="second_part">Therefore, I've become an <a id="second_part_1">Enthusiast</a><a id="second_part_2"> Autodidact</a><a id="second_part_3"> Explorer</a>,<br> and embarked<a id="second_part_4"> on a path to become a Data Scientist.</a><br><br><p id="last_part">This website is intended to present the cornerstones of my progress.</p>
-				</div>
-			</div>
-			<div class="about_cont_2">
-				<div class="photo_of_me"><img src="images/myselfcutted.png">
-				</div>
-			</div>
-	</div>
-</section>
-<section id="resume">
-		<div class="resume_part_main">
-			<div class="resume_cont_1">
-				<h1>Studies</h1>
-					<div class="resume_cont_1_1">
-							<dl>
-								<dt>University of Szeged - Faculty of Science</dt>
-								<dd>Molecular Bionics Engineer BSc<br>
-								(2017-2022)</dd>
-								<br>
-								<dt>Udemy</dt>
-								<dd>The Data Science Course 2023:<br>
-								Complete Data Science Bootcamp<br>
-							  	(2023)</dd>
-							  	<br>
-							  	<dt>Microsoft Learn</dt>
-								<dd>PL-300:
-								Microsoft Power BI Data Analyst<br>
-								(2023)<br></dd>
-								<br>
-								<dt>poltextLAB</dt>
-								<dd>Data Visualization in R<br>
-								(2022)<br></dd>
-							</dl>
+					<p id="first_part">
+						After finishing at university, as<span id="bionics"> a Molecular Bionics Engineer </span>with absolutorium,<a href="#home" id="check"> (contact me for my resume)</a> altough i felt engaged and confident to re-enter the world of full-time work, I noticed a shift in the world around me and felt the need to follow up on it.<br><br></p>
+						<p id="second_part">Therefore, I've become an <a id="second_part_1">Enthusiast</a><a id="second_part_2"> Autodidact</a><a id="second_part_3"> Explorer</a>,<br> and embarked on a path <a id="second_part_4">to become a Data Scientist.</a><br><br><p id="last_part">This website is intended to present the cornerstones of my progress.</p>
 					</div>
-					<h2>Work Experiences</h2>
-					<div class="resume_cont_1_2">
-						<ul>
-							<li>Key Experience:
-								<dl>
-									<dt>MSD Pharma Hungary Ltd.</dt>
-									<dd>Marketing Manager Intern<br>
-									(2016.06-2017.09)<br></dd>
-								</dl>
-								<br>
-							</li>
-							<li>Most Recent:
-								<dl>
-									<dt>TNT-FedEx Express</dt>
-									<dd>e-Customs Administrator, Assistant<br>
-									(2021.08-2022.07)</dd>
-								</dl>
-								<br>
-							</li>
-							<li>Others
-							<dl>
-								<dt>Also, within the last 8 years,<br> I've worked in these positions:</dt>
-								<dd>Betting Clerk at Horse Racing, Barist, Bartender</dd>
-							</dl>
+
+				</div>
+				<div class = "about_cont3">
+					<div class="hobbies_text">
+						<span>Hobbies</span>
+					</div>
+					<div class="hobbies_icons">
+						<li style="--i:0;"><a>
+							<iconify-icon icon="simple-icons:arduino"></iconify-icon></a>
 						</li>
-						</ul>
+						<li style="--i:1;">
+							<iconify-icon icon="fluent-emoji-high-contrast:parachute"></iconify-icon>
+						</li>
+						<li style="--i:2;">
+							<iconify-icon icon="game-icons:cooking-pot"></iconify-icon>
+						</li>
+						<li style="--i:3;">
+							<iconify-icon icon="fluent-emoji-high-contrast:man-mountain-biking"></iconify-icon>
+						</li>
+						<li style="--i:4;">
+							<iconify-icon icon="fluent-mdl2:reading-mode-solid"></iconify-icon>
+						</li>
 					</div>
-  		<!--<h3>Contact</h3>
-					<div class="resume_cont_1_3">
-						<ul>
-							<li>email: &ensp;&ensp; <span>csapkovits.gabor@gmail.com</span></li>
-							<li>phone: &ensp;&ensp; <span>+3630-867-0262</span></li>
-						</ul>
-				</div>-->
-			</div>
-		<div class="resume_cont_2">
-			<h1>Languages</h1>
-				<div class="resume_cont_2_1">
-					<ul>
-						<li>Hungarian &ensp; <span>Native</span></li>
-						<li>English &ensp;&ensp;&ensp;&ensp; <span>B2</span></li>
-					</ul>
 				</div>
-					<h2>Programming Languages</h2>
-					<div class="resume_cont_2_2">
-						<!--<div class="resume_cont_2_2_1">-->
-							<ul>
-								<li>ForDataScience
-									<dl>
-										<dt>Python<p style="color: white">&nbsp;*</p></dt>
-										<dd>NumPy, Pandas, Statsmodels, Scikit-Learn, TensorFlow 2.0,<br> Matplotlib, Seaborn and more ...</dd>
-										<dt>R<p style="color: white">&nbsp; *</p></dt>				
-										<dd>readr, dplyr, haven, ggplot2 and more ...</dd>
-										<dt>SQL<p style="color: white">&nbsp; *</p></dt>
-										<dd>MySQL - SSMS</dd>
-									</dl>
-								</li>
-								<li>Others
-									<dl>
-										<dt>Html<p style="color: white">&nbsp; *</p>, CSS<p style="color: white">&nbsp; *</p>, JavaScript<p style="color: white">&nbsp; *</p>, <br>Java<p style="color: white">&nbsp;**</p>, C<p style="color: white">&nbsp; **</p></dt>
-									</dl>
-								</li>
-							</ul>
-						<br>
-						<div class="line"></div><br>
-						<p class= "disclaimer" style="color: wite">Knowledge acquired &nbsp; ** (during) &nbsp; / &nbsp; * (after) &nbsp; university studies</p>
-					</div>
-				<!--</div>-->
 			</div>
-		</div>
+		</section>
 
- </section>
+		<!---Skills SECTION--->
+		<section id="skills" class="section">
+			<div class ="Skills_main">
 
+				<div class = "dataskills_cont">
+					
 
-<section id="portfolio">
-	<div class="portfolio_part_main">
-		<div class="title_banner"> 
-			<h3 style="text-wrap: balanced">**Mobile view of this section is under development**</h3> 
-		</div>
-		<div class="mobile_portfolio_disclaimer">
-			<a>Unfortunately<br> under construction,<br>come back later, until than check out in desktop view!</a>
-		</div>
-		<div class="slider_container">
-			<div class="slides">
-				<input type="radio" name="radio-btn" id="radio1">
-				<input type="radio" name="radio-btn" id="radio2">
-				<input type="radio" name="radio-btn" id="radio3">
-				<input type="radio" name="radio-btn" id="radio4">
-				<input type="radio" name="radio-btn" id="radio5">
+					<div class="languageRow">
+						<div class="icon_and_name">
+							<img src = "images/Power-Bi.png" >
+							<span>Power BI</span>             
+						</div>
+						<div class="skillmeter_cont">
 
-				<div class="slider_card_1">
-					<div class="slider_card_pic_1">
-						<img src="images/housing.jpg">
-					</div>
-					<div class="slider_card_desc_1">
-						<div class="card_wrapper">
-							<div class="content">
-							<b>House Price Prediction - Linear Regresssions</b>
+							<div class="level1_cont">
+								<div class="hover_text">
+									<span>Entry-Level</span>
+								</div>
+								<div class="level level1">
+								</div>
 							</div>
-							<button class="check_it_btn1">
-								Check It Out
-							</button>
+
+							<div class="level1-5_cont">
+								<div class="hover_text">
+									<span>-</span>
+								</div>
+								<div class="level level1-5">
+								</div>
+							</div>
+
+							<div class="level2_cont">
+								<div class="hover_text">
+									<span>Junior</span>
+								</div>
+								<div class="level level2">
+								</div>              
+							</div>
+
+							<div class="level2-5_cont">
+								<div class="hover_text">
+									<span>-</span>
+								</div>
+								<div class="level level2-5">
+								</div>
+							</div>
+
+							<div class="level3_cont" >
+								<div class="hover_text" id="currently">
+									<span>Associate</span>
+								</div>
+								<div class="level level3" id="currently2" >
+								</div>              
+							</div>
+
+							<div class="level3-5_cont">
+								<div class="hover_text">
+									<span>-</span>
+								</div>
+								<div class="level level3-5">
+								</div>
+							</div>
+
+							<div class="level4_cont">
+								<div class="hover_text">
+									<span>Medior</span>
+								</div>
+								<div class="level level4">
+								</div>
+							</div>
+
+							<div class="level4-5_cont">
+								<div class="hover_text">
+									<span>-</span>
+								</div>
+								<div class="level level4-5">
+								</div>
+							</div>
+
+							<div class="level5_cont">
+								<div class="hover_text">
+									<span>Senior</span>
+								</div>
+								<div class="level level5">                
+								</div>              
+							</div>
 						</div>
 
-					In this project, I'll use multiple linear regression methods, including Simple, Multiple, Ridge, Lasso, and ElasticNet, to predict house prices. By analyzing various factors, I aim to develop precise models that shed light on property valuation using diverse regression techniques.
-					</div>
-					<div class="slider_card_small_1"> 
-						<!--<div class="small_row_1_1"><i class="fab fa-python"></i></div>
-						<div class="small_row_1_2"><p>Short title1 </p></div>-->
-						<i class="fab fa-python python-icon"></i><br>
-						<p>Supervised Learning</p>
-					</div>
-				</div>
-				<div class="slider_card_2">
-					<div class="slider_card_pic_2">
-						<img src="images/mnist.jpg">
-					</div>
-					<div class="slider_card_desc_2">
-						<div class="card_wrapper">
-							<div class="content">
-							<b>Classifying on the MNIST dataset - CNN</b>
-							</div>
-							<button class="check_it_btn2">
-								Check It Out
-							</button>
+						<div class="divider3" id="divider_BI">
+							
 						</div>
 
-					The MNIST dataset consists of around 70,000 images of handwritten digits. The objective of this project is to build an algorithm that takes as input an image and then correctly determines which number is shown in that image.
+						<div class="additional_cont">
+							<div class="additional_level" style="width: 100%;">												
+								<span>Concepts:</span>
+								<br> <p>EDA, Visualizing Data, Data Modeling, Report Development,<br> DAX, Power Query, RLS, Share assets and more...</p>
+							</div>
+
+						</div>
+
+					</div><!--languagerow--->
+
+					<div class="divider2">
+
 					</div>
-					<div class="slider_card_small_2"> 
-						<!--<div class="small_row_1_1"><i class="fab fa-python"></i></div>
-						<div class="small_row_1_2"><p>Short title1 </p></div>-->
-						<i class="fab fa-python"></i><br>
-						<p>Deep Learning</p>
+					<!-------------------------------------------------------------->
+					<div class="languageRow">
+						<div class="icon_and_name">
+							<i class="fab fa-python"></i>
+							<span>Python</span>            
+						</div>
+						<div class="skillmeter_cont">
+
+							<div class="level1_cont">
+								<div class="hover_text">
+									<span>Entry-Level</span>
+								</div>
+								<div class="level level1">
+								</div>
+							</div>
+
+							<div class="level1-5_cont">
+								<div class="hover_text">
+									<span>-</span>
+								</div>
+								<div class="level level1-5">
+								</div>
+							</div>
+
+							<div class="level2_cont">
+								<div class="hover_text" id="currently">
+									<span>Junior</span>
+								</div>
+								<div class="level level2"  id="currently2">
+								</div>              
+							</div>
+
+							<div class="level2-5_cont">
+								<div class="hover_text" id="currently">
+									<span>-</span>
+								</div>
+								<div class="level level2-5" id="currently2">
+								</div>
+							</div>
+
+							<div class="level3_cont">
+								<div class="hover_text" id="currently">
+									<span>Associate</span>
+								</div>
+								<div class="level level3"  id="currently2">
+								</div>              
+							</div>
+
+							<div class="level3-5_cont">
+								<div class="hover_text">
+									<span>-</span>
+								</div>
+								<div class="level level3-5">
+								</div>
+							</div>
+
+							<div class="level4_cont">
+								<div class="hover_text">
+									<span>Medior</span>
+								</div>
+								<div class="level level4">
+								</div>
+							</div>
+
+							<div class="level4-5_cont">
+								<div class="hover_text">
+									<span>-</span>
+								</div>
+								<div class="level level4-5">
+								</div>
+							</div>
+
+							<div class="level5_cont">
+								<div class="hover_text">
+									<span>Senior</span>
+								</div>
+								<div class="level level5">                
+								</div>              
+							</div>
+						</div>
+
+						<div class="divider3" id="divider_PY">
+							
+						</div>
+
+						<div class="additional_cont">
+							<div class="additional_level">
+								<span>Libraries: </span>
+								<br><p>Pandas, Scipy, Numpy, Statsmodels, Matplotlib, scikit-learn, TensorFlow 2.0 <br>and more...</p>
+							</div>
+							<div class="divider4">
+								
+							</div>
+							<div class="additional_level">
+								<span>Concepts and Techniques:</span>
+								<br> <p>EDA, Data Visualization, Regression Analysis, Classification, Clustering <br> and more...</p>
+							</div>
+
+						</div>
+
 					</div>
+
+
+					<!--------------------------------------------------------------> 
+					<div class="languageRow">
+						<div class="icon_and_name">
+							<i class="fa-solid fa-database"></i>
+							<span>SQL</span>            
+						</div>
+						<div class="skillmeter_cont">
+
+							<div class="level1_cont">
+								<div class="hover_text" id="currently">
+									<span>Entry-Level</span>
+								</div>
+								<div class="level level1" id="currently2">
+								</div>
+							</div>
+
+							<div class="level1-5_cont">
+								<div class="hover_text">
+									<span>-</span>
+								</div>
+								<div class="level level1-5">
+								</div>
+							</div>
+
+							<div class="level2_cont">
+								<div class="hover_text">
+									<span>Junior</span>
+								</div>
+								<div class="level level2">
+								</div>              
+							</div>
+
+							<div class="level2-5_cont">
+								<div class="hover_text">
+									<span>-</span>
+								</div>
+								<div class="level level2-5">
+								</div>
+							</div>
+
+							<div class="level3_cont">
+								<div class="hover_text">
+									<span>Associate</span>
+								</div>
+								<div class="level level3">
+								</div>              
+							</div>
+
+							<div class="level3-5_cont">
+								<div class="hover_text">
+									<span>-</span>
+								</div>
+								<div class="level level3-5">
+								</div>
+							</div>
+
+							<div class="level4_cont">
+								<div class="hover_text">
+									<span>Medior</span>
+								</div>
+								<div class="level level4">
+								</div>
+							</div>
+
+							<div class="level4-5_cont">
+								<div class="hover_text">
+									<span>-</span>
+								</div>
+								<div class="level level4-5">
+								</div>
+							</div>
+
+							<div class="level5_cont">
+								<div class="hover_text">
+									<span>Senior</span>
+								</div>
+								<div class="level level5">                
+								</div>              
+							</div>
+						</div>
+						<div class="divider3" id="divider_SQL">
+							
+						</div>
+
+						<div class="additional_cont">
+							<div class="additional_level" style="width: 100%;">												
+								<span>ONGOING STUDIES</span>
+								
+							</div>
+
+						</div>
+					</div>
+					<!-------------------------------------------------------------->
+					<div class="languageRow">
+						<div class="icon_and_name">
+							<i class="fa-brands fa-r-project"></i>
+							<span>R</span>            
+						</div>
+						<div class="skillmeter_cont">
+
+							<div class="level1_cont">
+								<div class="hover_text" id="currently">
+									<span>Entry-Level</span>
+								</div>
+								<div class="level level1" id="currently2">
+								</div>
+							</div>
+
+							<div class="level1-5_cont">
+								<div class="hover_text">
+									<span>-</span>
+								</div>
+								<div class="level level1-5">
+								</div>
+							</div>
+
+							<div class="level2_cont">
+								<div class="hover_text">
+									<span>Junior</span>
+								</div>
+								<div class="level level2">
+								</div>              
+							</div>
+
+							<div class="level2-5_cont">
+								<div class="hover_text">
+									<span>-</span>
+								</div>
+								<div class="level level2-5">
+								</div>
+							</div>
+
+							<div class="level3_cont">
+								<div class="hover_text">
+									<span>Associate</span>
+								</div>
+								<div class="level level3">
+								</div>              
+							</div>
+
+							<div class="level3-5_cont">
+								<div class="hover_text">
+									<span>-</span>
+								</div>
+								<div class="level level3-5">
+								</div>
+							</div>
+
+							<div class="level4_cont">
+								<div class="hover_text">
+									<span>Medior</span>
+								</div>
+								<div class="level level4">
+								</div>
+							</div>
+
+							<div class="level4-5_cont">
+								<div class="hover_text">
+									<span>-</span>
+								</div>
+								<div class="level level4-5">
+								</div>
+							</div>
+
+							<div class="level5_cont">
+								<div class="hover_text">
+									<span>Senior</span>
+								</div>
+								<div class="level level5">                
+								</div>              
+							</div>
+						</div>
+						<div class="divider3"></div>
+
+						<div class="additional_cont">
+							<div class="additional_level">
+								<span>Libraries: </span>
+								<br><p>readr, dplyr, ggplot2 and more...</p>
+							</div>
+							<div class="divider4"></div>
+							<div class="additional_level">
+								<span>Concepts and Techniques:</span>
+								<br> <p>EDA, Data Visulization, and more...</p>
+							</div>
+
+						</div>
+					</div><!--languageRow->
+					<!-------------------------------------------------------------->
+
 				</div>
-				<!--<div class="slider_card_3">
+
+				<div class="category_selector1">Data Science <br><span> and</span> <br> Analysis Tools</div>
+
+
+				<div class = "divider_cont">
+
+					<!--<i id="left_arrow" class="fa-solid fa-chevron-down"></i><br><br>
+					<i id="left_arrow2" class="fa-solid fa-chevron-down"></i><br><br>
+					
+					<i id="right_arrow" class="fa-solid fa-chevron-down"></i><br><br>
+					<i id="right_arrow2" class="fa-solid fa-chevron-down"></i><br><br>-->
+			
+
+								
+				</div>
+				<div class = "otherskills_cont">
+					<div class="other_cont cat1">
+						<div class="columns Col1">
+							<div class="sc-iconNname">
+								<i class="fa-brands fa-html5"></i>
+								<span>html5</span>
+							</div>
+							<div class="sc-gauge">
+								<div class="sc-background">
+									<div class="sc-percentage"></div>
+									<div class="sc-mask"></div>
+									<span class="sc-value">Junior <br>-<br> Associate</span>
+								</div>
+								<span class="sc-min">Entry-Level</span>
+								<span class="sc-max">Senior</span>
+							</div>
+						</div>
+						<div class="divider5">
+								
+							</div>
+						<div class="columns Col2">
+							<div class="sc-iconNname">
+								<i class="fa-brands fa-css3-alt"></i>
+								<span>CSS</span>
+							</div>
+							<div class="sc-gauge">
+								<div class="sc-background">
+									<div class="sc-percentage"></div>
+									<div class="sc-mask"></div>
+									<span class="sc-value">Junior</span>
+								</div>
+								<span class="sc-min">Entry-Level</span>
+								<span class="sc-max">Senior</span>
+							</div>
+						</div>
+						<div class="divider5">
+								
+							</div>
+						<div class="columns Col3">
+							<div class="sc-iconNname">
+								<i class="fa-brands fa-js"></i>
+								<span>javascript</span>
+							</div>
+							<div class="sc-gauge">
+								<div class="sc-background">
+									<div class="sc-percentage"></div>
+									<div class="sc-mask"></div>
+									<span class="sc-value">Entry<br>-<br>Level</span>
+								</div>
+								<span class="sc-min">Entry-Level</span>
+								<span class="sc-max">Senior</span>
+							</div>
+						</div>
+						
+					</div>
+
+					<div class="other_cont cat2">
+						<div class="icon_and_name2">
+							<i class="fa-solid fa-gear" id="gear1"></i>
+							<span>Soft Skills</span>
+							<i class="fa-solid fa-gear" id="gear2"></i>							
+						</div>
+						<div class="divider3"></div>
+						<div class="additional_cont softcont">
+							<div class="additional_level">
+								<span>Detail Orientation </span>
+								<br>
+								<p>
+									<li>Problem-Solving</li>
+															
+									<li>Attention to Detail</li>
+									<li>Analytical Thinking</li>
+								</p>
+							</div>
+							<div class="divider4 leftdiv">
+								
+							</div>
+							<div class="additional_level">
+								<span>Collaborative Dynamics </span>
+								<br>
+								<p>
+									<li>Adaptability</li>
+									<li>Team Collaboration</li>
+									<li>Curiosity and Learning Agility</li>							
+								</p>
+							</div>
+							<div class="divider4 rightdiv">
+								
+							</div>
+							<div class="additional_level">
+								<span>Strategic Thinking </span>
+								<br>
+								<p>
+									<li>Multitasking</li>									
+									<li>Critical Thinking</li>
+									<li>Time Management</li>
+								</p>
+							</div>
+
+						</div>
+						
+					</div>
+					<div class="other_cont cat3">
+						
+
+						<div class="otherRow">
+							<div class="icon_and_name3">
+								<i class="fa-brands fa-java"></i>
+								<span>Java</span>
+
+							</div>
+							<div class="divider8">
+															
+							</div>
+							<div class="additional_level cat3additional">
+								<span>Concepts: </span>
+								<p>UML, OOP, Dynamic Programming, Polymorphism and more...</p>
+							</div>
+							
+						</div>
+						<div class="divider3"></div>
+						<div class="otherRow">
+							<div class="icon_and_name3">
+								<i class="fa-solid fa-c"></i>
+								<span>C</span>
+
+							</div>
+							<div class="divider8">
+
+							</div>
+							<div class="additional_level cat3additional">
+								<span>Concepts: </span>
+								<p>Programming 101</p>
+							</div>
+						</div>
+						
+					</div>
+
+				</div>
+				<div class="category_selector2">Web Development <br><span> Soft Skills</span> <br> and more</div>
+			</div>
+		</section>
+
+		<!---Portfolio SECTION--->
+		<section id="portfolio" class="section">
+			<div class ="Portfolio_main">
+				<div class="slider_container">
+					<div class="slides">
+						<input type="radio" name="radio-btn" id="radio1">
+						<input type="radio" name="radio-btn" id="radio2">
+						<input type="radio" name="radio-btn" id="radio3">
+						<input type="radio" name="radio-btn" id="radio4">
+						<input type="radio" name="radio-btn" id="radio5">
+
+						<div class="slider_card_1">
+							<div class="slider_card_pic_1">
+								<img src="images/housing.jpg">
+							</div>
+							<div class="slider_card_desc_1">
+								<div class="card_wrapper">
+									<div class="content">
+										<b>House Price Prediction - Linear Regresssions</b>
+									</div>
+									<button class="check_it_btn1">
+										Check It Out
+									</button>
+								</div>
+
+								In this project, I'll use multiple linear regression methods, including Simple, Multiple, Ridge, Lasso, and ElasticNet, to predict house prices. By analyzing various factors, I aim to develop precise models that shed light on property valuation using diverse regression techniques.
+							</div>
+							<div class="slider_card_small_1"> 
+						<!--<div class="small_row_1_1"><i class="fab fa-python"></i></div>
+							<div class="small_row_1_2"><p>Short title1 </p></div>-->
+							<i class="fab fa-python python-icon"></i><br>
+							<p>Supervised Learning</p>
+						</div>
+					</div>
+					<div class="slider_card_2">
+						<div class="slider_card_pic_2">
+							<img src="images/mnist.jpg">
+						</div>
+						<div class="slider_card_desc_2">
+							<div class="card_wrapper">
+								<div class="content">
+									<b>Classifying on the MNIST dataset - CNN</b>
+								</div>
+								<button class="check_it_btn2">
+									Check It Out
+								</button>
+							</div>
+
+							The MNIST dataset consists of around 70,000 images of handwritten digits. The objective of this project is to build an algorithm that takes as input an image and then correctly determines which number is shown in that image.
+						</div>
+						<div class="slider_card_small_2"> 
+						<!--<div class="small_row_1_1"><i class="fab fa-python"></i></div>
+							<div class="small_row_1_2"><p>Short title1 </p></div>-->
+							<i class="fab fa-python"></i><br>
+							<p>Deep Learning</p>
+						</div>
+					</div>
+				<!--<div class="slider_card_5">
 					<div class="slider_card_pic_3">
-						<img src="images/cluster3.jpg">
+						<img src="images/somethingforPOWER BI.jpg">
 					</div>
 					<div class="slider_card_desc_3">Nullam sagittis non sapien eget fringilla.<br><br>
 
@@ -290,119 +854,271 @@
 					<div class="slider_card_desc_3">
 						<div class="card_wrapper">
 							<div class="content">
-							<b>Cluster Analysis</b>
+								<b>Cluster Analysis</b>
 							</div>
 							<button class="check_it_btn3">
 								Check It Out
 							</button>
 						</div>
 
-					In this project, I'll apply cluster analysis techniques to reveal hidden patterns in the dataset. Through methods like k-means or hierarchical clustering, I'll categorize similar data points, uncovering valuable insights into the underlying structure of the data.
+						In this project, I'll apply cluster analysis techniques to reveal hidden patterns in the dataset. Through methods like k-means or hierarchical clustering, I'll categorize similar data points, uncovering valuable insights into the underlying structure of the data.
 					</div>
 					<div class="slider_card_small_3"> 
 						<!--<div class="small_row_1_1"><i class="fab fa-python"></i></div>
-						<div class="small_row_1_2"><p>Short title1 </p></div>-->
-						<i class="fab fa-python"></i>
-						<p>Unsupervized Learning </p>				
-					</div>
-				</div>
-				<div class="slider_card_4">
-					<div class="slider_card_pic_4">
-						<img src="images/Rplot.png">
-					</div>
-					<div class="slider_card_desc_4">
-						<div class="card_wrapper">
-							<div class="content">
-							<b>Visualizations in R</b>
-							</div>
-							<button class="check_it_btn4">
-								Check It Out
-							</button>
+							<div class="small_row_1_2"><p>Short title1 </p></div>-->
+							<i class="fab fa-python"></i>
+							<p>Unsupervized Learning </p>				
 						</div>
-
-					This project serves as a demonstration of data exploration, illustrating the diverse capabilities of ggplot2 and its potential for revealing patterns, trends, and relationships within different datasets. 
 					</div>
-					<div class="slider_card_small_4"> 
+					<div class="slider_card_4">
+						<div class="slider_card_pic_4">
+							<img src="images/Rplot.png">
+						</div>
+						<div class="slider_card_desc_4">
+							<div class="card_wrapper">
+								<div class="content">
+									<b>Visualizations in R</b>
+								</div>
+								<button class="check_it_btn4">
+									Check It Out
+								</button>
+							</div>
+
+							This project serves as a demonstration of data exploration, illustrating the diverse capabilities of ggplot2 and its potential for revealing patterns, trends, and relationships within different datasets. 
+						</div>
+						<div class="slider_card_small_4"> 
 						<!--<div class="small_row_1_1"><i class="fab fa-python"></i></div>
-						<div class="small_row_1_2"><p>Short title1 </p></div>-->
-						<i class="fa-brands fa-r-project"></i><br>
-						<p>R Project </p>
+							<div class="small_row_1_2"><p>Short title1 </p></div>-->
+							<i class="fa-brands fa-r-project"></i><br>
+							<p>R Project </p>
+						</div>
 					</div>
-				</div>
-		 <div class="navigation-auto">
-		          <div class="auto-btn1"></div>
-		          <div class="auto-btn2"></div>
-		          <div class="auto-btn3"></div>
-		          <div class="auto-btn4"></div>
-		         <!-- <div class="auto-btn5"></div>-->
-		        </div><!---->
-		 <!----><div class="navigation-manual">
-			        <label for="radio1" class="manual-btn"></label>
-			        <label for="radio2" class="manual-btn"></label>
-			        <label for="radio3" class="manual-btn"></label>
-			        <label for="radio4" class="manual-btn"></label>
-			       <!--  <label for="radio5"class="manual-btn"></label>-->
-			     </div><!---->
+					<div class="navigation-auto">
+						<div class="auto-btn1"></div>
+						<div class="auto-btn2"></div>
+						<div class="auto-btn3"></div>
+						<div class="auto-btn4"></div>
+						<!-- <div class="auto-btn5"></div>-->
+					</div><!---->
+					<!----><div class="navigation-manual">
+						<label for="radio1" class="manual-btn"></label>
+						<label for="radio2" class="manual-btn"></label>
+						<label for="radio3" class="manual-btn"></label>
+						<label for="radio4" class="manual-btn"></label>
+						<!--  <label for="radio5"class="manual-btn"></label>-->
+					</div><!---->
 
-			</div><!--end of slides-->
-	
-		</div><!--end of slider_container-->
-		<dialog class="modal" id="modal1">
-			<div class="modal_choice">
-				<i class="fa-solid fa-download" data-folder="House_Price_LinRegs"></i>
-				<i class="fa-brands fa-github-square" id="github_1"></i>
-			</div>
-			<button class="close_modal"><b>Close</b></button>
-		</dialog>
-		<dialog class="modal" id="modal2">
-			<div class="modal_choice">
-				<i class="fa-solid fa-download " data-folder="Project_MNIST"></i>
-				<i class="fa-brands fa-github-square" id="github_2"></i>
-			</div>
-			<button class="close_modal"><b>Close</b></button>
-		</dialog>
-		<dialog class="modal" id="modal3">
-			<div class="modal_choice">
-				<i class="fa-solid fa-download" data-folder="Cluster_Analysis"></i>
-				<i class="fa-brands fa-github-square" id="github_3"></i>
-			</div>
-			<button class="close_modal"><b>Close</b></button>
-		</dialog>
-		<dialog class="modal" id="modal4">
-			<div class="modal_choice">
-				<i class="fa-solid fa-download" data-folder="R_Project"></i>
-				<i class="fa-brands fa-github-square" id="github_4"></i>
-			</div>
-			<button class="close_modal"><b>Close</b></button>
-		</dialog>
-	</div><!--end of portfolio_main-->
+				</div><!--end of slides-->
+
+			</div><!--end of slider_container-->
+			<dialog class="modal" id="modal1">
+				<div class="modal_choice">
+					<i class="fa-solid fa-download" data-folder="House_Price_LinRegs"></i>
+					<i class="fa-brands fa-github-square" id="github_1"></i>
+				</div>
+				<button class="close_modal"><b>Close</b></button>
+			</dialog>
+			<dialog class="modal" id="modal2">
+				<div class="modal_choice">
+					<i class="fa-solid fa-download " data-folder="Project_MNIST"></i>
+					<i class="fa-brands fa-github-square" id="github_2"></i>
+				</div>
+				<button class="close_modal"><b>Close</b></button>
+			</dialog>
+			<dialog class="modal" id="modal3">
+				<div class="modal_choice">
+					<i class="fa-solid fa-download" data-folder="Cluster_Analysis"></i>
+					<i class="fa-brands fa-github-square" id="github_3"></i>
+				</div>
+				<button class="close_modal"><b>Close</b></button>
+			</dialog>
+			<dialog class="modal" id="modal4">
+				<div class="modal_choice">
+					<i class="fa-solid fa-download" data-folder="R_Project"></i>
+					<i class="fa-brands fa-github-square" id="github_4"></i>
+				</div>
+				<button class="close_modal"><b>Close</b></button>
+			</dialog>
+
+
+		</div>
+	</div>
 </section>
 
 
-</body>
-<!--Mobile View Menu Click-->
-	<script type="text/javascript">
-		const menuButton = document.getElementById('MenuButton');
-		const navList = document.getElementById('NavigList');
 
 
-		menuButton.addEventListener('click', () =>{
-			navList.classList.toggle('active');
-		});
-	</script>
 
-	<!--Smooth Scrolling Anchored Site-->
-	<script>
-		document.querySelectorAll('a[href^="#"').forEach(anchor => { 
-				anchor.addEventListener("click", function(e){
-					e.preventDefault(); //allows to be smooth,..nope it doesnt
-					document.querySelector(this.getAttribute("href")).scrollIntoView({
-						behavior: "smooth";
-					});
-				});
-		});
-	</script>
-	<!--linkedin and github click-->
+
+
+
+  </body>
+
+  <script>
+    // Show the loader initially
+    const loaderContainer = document.getElementById('loader-container');
+
+    // Hide the loader and show the content after 3 seconds
+    setTimeout(() => {
+        loaderContainer.style.display = 'none';
+        document.querySelectorAll('header, .bottom_contact, section').forEach(element => {
+            element.style.display = 'flex'; // Assuming you want to use flex for sections as well
+        });
+    }, 6000);
+</script>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        const navItems = document.querySelectorAll('.nav-item');
+        const sections = document.querySelectorAll('.section');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 50;
+                const sectionHeight = section.clientHeight;
+                const scrollPaddingTop = 60;
+
+                if (window.scrollY + scrollPaddingTop >= sectionTop && window.scrollY + scrollPaddingTop < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('data-link') === current) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        function scrollToSection(sectionId) {
+            const section = document.querySelector(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        navItems.forEach(item => {
+            item.addEventListener('click', (event) => {
+                event.preventDefault();
+                scrollToSection(`#${item.getAttribute('data-link')}`);
+                navItems.forEach(innerItem => innerItem.classList.remove('active'));
+                item.classList.add('active');
+            });
+        });
+    });
+</script>
+
+<!--
+  <script type="text/javascript">
+	document.addEventListener('DOMContentLoaded', function () {
+	  const navItems = document.querySelectorAll('.nav-item');
+	  const sections = document.querySelectorAll('.section');
+
+	  window.addEventListener('scroll', () => {
+	    let current = '';
+
+	    sections.forEach(section => {
+	      const sectionTop = section.offsetTop - 50;
+	      const sectionHeight = section.clientHeight;
+	      const scrollPaddingTop = 60; // Set to the value of your scroll-padding-top
+
+	      if (window.scrollY + scrollPaddingTop >= sectionTop && window.scrollY + scrollPaddingTop < sectionTop + sectionHeight) {
+	        current = section.getAttribute('id');
+	      }
+	    });
+
+	    navItems.forEach(item => {
+	      item.classList.remove('active');
+	      if (item.getAttribute('data-link') === current) {
+	        item.classList.add('active');
+	      }
+	    });
+	  });
+
+	  navItems.forEach(item => {
+	    item.addEventListener('click', () => {
+	      navItems.forEach(innerItem => innerItem.classList.remove('active'));
+	      item.classList.add('active');
+	    });
+	  });
+	});
+  </script>-->
+  <!--Reload Page on Top-->
+  <script type="text/javascript">
+	 window.onbeforeunload = function () {
+	    
+	    var homeElement = document.getElementById('home');
+
+	    if (homeElement) {
+	      
+	      homeElement.scrollIntoView({ behavior: 'smooth' });
+	    }
+	  }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+  	//THIS ONE IS FOR SKILLS METER HOVER text & effect
+  	//CAUSE PREVIOUS SIBLING SELECTION WITH CSS SUCKS
+   $(document).ready(function () {
+    $('.level1-5_cont, .level2-5_cont, .level3-5_cont, .level4-5_cont').hover(
+      function () {
+        
+        $(this).find('.hover_text').addClass('show');        
+        $(this).prev().find('.hover_text').addClass('show');
+        $(this).next().find('.hover_text').addClass('show');
+
+        $(this).find('.level').addClass('scale');
+        $(this).prev().find('.level').addClass('scale');
+        $(this).next().find('.level').addClass('scale');
+
+      },
+      function () {
+        
+        $(this).find('.hover_text').removeClass('show');
+        $(this).prev().find('.hover_text').removeClass('show');
+        $(this).next().find('.hover_text').removeClass('show');
+
+        $(this).find('.level').removeClass('scale');
+        $(this).prev().find('.level').removeClass('scale');
+        $(this).next().find('.level').removeClass('scale');
+
+
+      }
+      );
+  });
+   $(document).ready(function () {
+    $('.level1_cont, .level2_cont, .level3_cont, .level4_cont, .level5_cont').hover(
+      function () {
+        $(this).find('.level').addClass('scale');
+        $(this).find('.hover_text').addClass('show');
+        
+      },
+      function () {
+        $(this).find('.level').removeClass('scale');
+        $(this).find('.hover_text').removeClass('show');
+        
+      }
+      );
+  });
+   
+
+
+
+</script>
+<script type="text/javascript">
+	$(document).ready(function () {
+  $('.skillmeter_cont:not(:hover) #currently').hover(
+    function () {
+      $(this).find('.hover_text').addClass('show');
+    },
+    function () {
+      $(this).find('.hover_text').removeClass('show');
+    }
+  );
+});
+</script>
+
+ <!--linkedin and github click-->
 	<script>
 	        document.addEventListener('DOMContentLoaded', function() {
 	            
@@ -427,32 +1143,6 @@
 	        });
 	</script>
 
-	<!--sticky menu-->
-	<script type="text/javascript">
-		window.onscroll = function() {myFunction()};
-
-		var navbar = document.getElementById("navbar");
-		var sticky = navbar.offsetTop;
-
-		function myFunction() {
-		  if (window.pageYOffset >= sticky) {
-		    navbar.classList.add("sticky");
-		  } else {
-		    navbar.classList.remove("sticky");
-		  }
-		};
-	</script>
-	<!--slider-->
-	<!--<script type="text/javascript">
-			var counter=1;
-			setInterval(function(){
-				document.getElementById('radio'+counter).checked = true;
-				counter++;
-				if(counter>5){
-					counter=1;
-				}
-			}, 5000);
-	</script>-->
 	<script type="text/javascript">
 	  var counter = 1;
 	  var totalRadios = 4; // Total number of radio buttons
@@ -537,8 +1227,6 @@
 	    });
 	  });
 	</script>
-
-	<!--linkedin and github click-->
 	<script>
 	        document.addEventListener('DOMContentLoaded', function() {
 	            
@@ -579,6 +1267,4 @@
 	        });
 	</script>
 
-
-
-</htmL>
+</html>
