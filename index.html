@@ -25,11 +25,11 @@
   </head>
   <body>
   	<!--Page Loader--->
-  	<div id="loader-container">
+ 	<div id="loader-container">
     <svg viewBox="0 0 100 100">
-        <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6">-->
+        <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"> 			
             <!-- left line -->
-            <path d="M 21 40 V 59">
+          <path d="M 21 40 V 59">
                 <animateTransform
                     attributeName="transform"
                     attributeType="XML"
@@ -37,7 +37,7 @@
                     values="0 21 59; 180 21 59"
                     dur="2s"
                     repeatCount="indefinite" />
-            </path>
+            </path>																	
             <!-- right line -->
             <path d="M 79 40 V 59">
                 <animateTransform
@@ -49,7 +49,7 @@
                     repeatCount="indefinite" />
             </path>
             <!-- top line -->
-            <path d="M 50 21 V 40">
+           <path d="M 50 21 V 40">
                 <animate
                     attributeName="d"
                     values="M 50 21 V 40; M 50 59 V 40"
@@ -65,7 +65,7 @@
                     repeatCount="indefinite" />
             </path>
             <!-- top box -->
-            <path d="M 50 21 L 79 40 L 50 60 L 21 40 Z">
+           <path d="M 50 21 L 79 40 L 50 60 L 21 40 Z">
                 <animate
                     attributeName="stroke"
                     values="rgba(255,255,255,1); rgba(100,100,100,0)"
@@ -73,7 +73,7 @@
                     repeatCount="indefinite" />
             </path>
             <!-- mid box -->
-            <path d="M 50 40 L 79 59 L 50 79 L 21 59 Z"/>
+           <path d="M 50 40 L 79 59 L 50 79 L 21 59 Z"/>
             <!-- btm box -->
             <path d="M 50 59 L 79 78 L 50 98 L 21 78 Z">
                 <animate
@@ -96,8 +96,7 @@
     	Loading page<span id="dot1">.</span><span id="dot2">.</span><span id="dot3">.</span>    	
     </div>
 
-    
-</div>
+    </div>
 
 
 
@@ -106,9 +105,18 @@
   	  <header>
 	    <div class="logo"><a href="#home">
 					<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.Enthusiast</span> <span class="token punctuation">{</span>
-		<span class="token property">Autodidact</span><span class="token punctuation">:</span> Explorer<span class="token punctuation">;</span>
+	<span class="token property">Autodidact</span><span class="token punctuation">:</span> Explorer<span class="token punctuation">;</span>
 	<span class="token punctuation">  }</span></code></pre></a>
 	    </div>
+		   <div class="cont_container">
+		  		<div class="fa fa-linkedin-square linkedin-icon"  style="font-size:25px;color: var(--theme_blue)">				
+		  		</div>
+		  		<a href="#home"><div class="email"> 
+		  			<span class="fa fa-envelope">			</span>
+		  			<p> Contact Me! </p>
+		  		</div></a>
+		  		<div class="fa fa-github-square github-icon" style="font-size:25px;color: var(--theme_blue)"></div>
+		  	</div>
 		    <nav>
     <ul>
         <li class="nav-item active" data-link="home"><a href="#home" onclick="scrollToSection('#home');">.Home</a></li>
@@ -116,13 +124,13 @@
         <li class="nav-item" data-link="skills"><a href="#skills" onclick="scrollToSection('#skills');">.Skills</a></li>
         <li class="nav-item" data-link="portfolio"><a href="#portfolio" onclick="scrollToSection('#portfolio');">.Portfolio</a></li>
     </ul>
-</nav>
+				</nav>
 	  </header>
 	  <!--maybe-
 	  <footer>
 	  	
 	  </footer>-->
-	  <div class="bottom_contact">
+	  <!---<div class="bottom_contact">
 	  	<div class="cont_container">
 	  		<div class="fa fa-linkedin-square linkedin-icon"  style="font-size:25px;color: var(--theme_blue)">				
 	  		</div>
@@ -132,11 +140,11 @@
 	  		</div></a>
 	  		<div class="fa fa-github-square github-icon" style="font-size:25px;color: var(--theme_blue)"></div>
 	  	</div>
-	  </div>
+	  </div>--->
 <!---Home SECTION--->
 <section id="home" class="section">
 	<div class ="Home_main">
-		
+		<div class="hero_fade"></div>
 		<div class = "home_cont1">
 			<h1 id="text1">
 				<a>Welcome Here</a>,
@@ -173,6 +181,7 @@
 				</form> 
 			</div>
 		</div>
+
 	</section>
 
 	<!---About SECTION--->      
@@ -224,12 +233,14 @@
 		<section id="skills" class="section">
 			<div class ="Skills_main">
 
+				<div class="hero_fade_2"></div>
+				<div class="hero_fade_3"></div>
 				<div class = "dataskills_cont">
 					
 
 					<div class="languageRow">
 						<div class="icon_and_name">
-							<img src = "images/Power-BI.png" >
+							<img src = "images/Power-Bi.png" >
 							<span>Power BI</span>             
 						</div>
 						<div class="skillmeter_cont">
@@ -324,6 +335,98 @@
 					<div class="divider2">
 
 					</div>
+					<div class="languageRow">
+						<div class="icon_and_name">
+							<i class="fa-solid fa-database"></i>
+							<span>SQL</span>            
+						</div>
+						<div class="skillmeter_cont">
+
+							<div class="level1_cont">
+								<div class="hover_text" >
+									<span>Entry-Level</span>
+								</div>
+								<div class="level level1" >
+								</div>
+							</div>
+
+							<div class="level1-5_cont">
+								<div class="hover_text">
+									<span>-</span>
+								</div>
+								<div class="level level1-5">
+								</div>
+							</div>
+
+							<div class="level2_cont">
+								<div class="hover_text">
+									<span>Junior</span>
+								</div>
+								<div class="level level2">
+								</div>              
+							</div>
+
+							<div class="level2-5_cont">
+								<div class="hover_text">
+									<span>-</span>
+								</div>
+								<div class="level level2-5">
+								</div>
+							</div>
+
+							<div class="level3_cont">
+								<div class="hover_text" id="currently">
+									<span>Associate</span>
+								</div>
+								<div class="level level3" id="currently2">
+								</div>              
+							</div>
+
+							<div class="level3-5_cont">
+								<div class="hover_text">
+									<span>-</span>
+								</div>
+								<div class="level level3-5">
+								</div>
+							</div>
+
+							<div class="level4_cont">
+								<div class="hover_text">
+									<span>Medior</span>
+								</div>
+								<div class="level level4">
+								</div>
+							</div>
+
+							<div class="level4-5_cont">
+								<div class="hover_text">
+									<span>-</span>
+								</div>
+								<div class="level level4-5">
+								</div>
+							</div>
+
+							<div class="level5_cont">
+								<div class="hover_text">
+									<span>Senior</span>
+								</div>
+								<div class="level level5">                
+								</div>              
+							</div>
+						</div>
+						<div class="divider3" id="divider_SQL">
+							
+						</div>
+
+						<div class="additional_cont">
+							<div class="additional_level" style="width: 100%;">												
+								<span>Concepts:</span>
+								<br> <p>ETL, EDA, CTEs, window functions,<br> views, correlated queries, bucketing and more...</p>
+							</div>
+
+						</div>
+					</div>
+					<!-------------------------------------------------------------->
 					<!-------------------------------------------------------------->
 					<div class="languageRow">
 						<div class="icon_and_name">
@@ -428,98 +531,7 @@
 
 
 					<!--------------------------------------------------------------> 
-					<div class="languageRow">
-						<div class="icon_and_name">
-							<i class="fa-solid fa-database"></i>
-							<span>SQL</span>            
-						</div>
-						<div class="skillmeter_cont">
-
-							<div class="level1_cont">
-								<div class="hover_text" id="currently">
-									<span>Entry-Level</span>
-								</div>
-								<div class="level level1" id="currently2">
-								</div>
-							</div>
-
-							<div class="level1-5_cont">
-								<div class="hover_text">
-									<span>-</span>
-								</div>
-								<div class="level level1-5">
-								</div>
-							</div>
-
-							<div class="level2_cont">
-								<div class="hover_text">
-									<span>Junior</span>
-								</div>
-								<div class="level level2">
-								</div>              
-							</div>
-
-							<div class="level2-5_cont">
-								<div class="hover_text">
-									<span>-</span>
-								</div>
-								<div class="level level2-5">
-								</div>
-							</div>
-
-							<div class="level3_cont">
-								<div class="hover_text">
-									<span>Associate</span>
-								</div>
-								<div class="level level3">
-								</div>              
-							</div>
-
-							<div class="level3-5_cont">
-								<div class="hover_text">
-									<span>-</span>
-								</div>
-								<div class="level level3-5">
-								</div>
-							</div>
-
-							<div class="level4_cont">
-								<div class="hover_text">
-									<span>Medior</span>
-								</div>
-								<div class="level level4">
-								</div>
-							</div>
-
-							<div class="level4-5_cont">
-								<div class="hover_text">
-									<span>-</span>
-								</div>
-								<div class="level level4-5">
-								</div>
-							</div>
-
-							<div class="level5_cont">
-								<div class="hover_text">
-									<span>Senior</span>
-								</div>
-								<div class="level level5">                
-								</div>              
-							</div>
-						</div>
-						<div class="divider3" id="divider_SQL">
-							
-						</div>
-
-						<div class="additional_cont">
-							<div class="additional_level" style="width: 100%;">												
-								<span>ONGOING STUDIES</span>
-								
-							</div>
-
-						</div>
-					</div>
-					<!-------------------------------------------------------------->
+					
 					<div class="languageRow">
 						<div class="icon_and_name">
 							<i class="fa-brands fa-r-project"></i>
@@ -696,38 +708,38 @@
 						</div>
 						<div class="divider3"></div>
 						<div class="additional_cont softcont">
-							<div class="additional_level">
+							<div class="additional_level  softco_add">
 								<span>Detail Orientation </span>
 								<br>
 								<p>
-									<li>Problem-Solving</li>
+									<li class="s_li_1">Problem-Solving</li>
 															
-									<li>Attention to Detail</li>
-									<li>Analytical Thinking</li>
+									<li class="s_li_2">Attention to Detail</li>
+									<li class="s_li_3">Analytical Thinking</li>
 								</p>
 							</div>
 							<div class="divider4 leftdiv">
 								
 							</div>
-							<div class="additional_level">
+							<div class="additional_level  softco_add">
 								<span>Collaborative Dynamics </span>
 								<br>
 								<p>
-									<li>Adaptability</li>
-									<li>Team Collaboration</li>
-									<li>Curiosity and Learning Agility</li>							
+									<li class="s_li_1">Adaptability</li>
+									<li class="s_li_2">Team Collaboration</li>
+									<li class="s_li_3">Curiosity and Learning Agility</li>							
 								</p>
 							</div>
 							<div class="divider4 rightdiv">
 								
 							</div>
-							<div class="additional_level">
+							<div class="additional_level softco_add">
 								<span>Strategic Thinking </span>
 								<br>
 								<p>
-									<li>Multitasking</li>									
-									<li>Critical Thinking</li>
-									<li>Time Management</li>
+									<li class="s_li_1">Multitasking</li>									
+									<li class="s_li_2">Critical Thinking</li>
+									<li class="s_li_3">Time Management</li>
 								</p>
 							</div>
 
@@ -778,6 +790,7 @@
 		<!---Portfolio SECTION--->
 		<section id="portfolio" class="section">
 			<div class ="Portfolio_main">
+
 				<div class="slider_container">
 					<div class="slides">
 						<input type="radio" name="radio-btn" id="radio1">
@@ -966,6 +979,8 @@
         });
     }, 6000);
 </script>
+
+
 <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function () {
         const navItems = document.querySelectorAll('.nav-item');
